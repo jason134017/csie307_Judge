@@ -1,0 +1,36 @@
+.button {
+	background: #FFFFFF;
+	border: 1px solid #B2B2B2;
+	color: #000000;
+	padding: 3px 15px 3px 15px;
+	vertical-align:middle;
+	text-align:center;
+	/*font-family: 80% Verdana, tahoma, sans-serif;*/
+}
+.FirstPageTitle {
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align: center;
+}
+
+.mainmenu {
+	text-align: center;
+	vertical-align: middle;
+	display: block;
+	clear: both;
+/*	background-image: url(images/cellpic_nav.gif);*/
+	background-color: #60a060;
+	padding-left: 10px;
+	padding-right: 20px;
+	/*color: #dd6900; */
+	color: #336633;
+	white-space: nowrap;
+	border: solid;
+	/*border-color: #91a0ae;*/
+/*	border-color: #a2b1bf;*/
+	border-color: #408040;
+	border-width: 1px 0px 1px 0px;
+	/* 底下為垂直置中, 兩項高度必須連動 */
+	height: 28px;
+	line-height: 28px;
+}

@@ -1,0 +1,24 @@
+body {
+    padding-bottom: 20px;
+    background-color: #343a40
+  }
+  
+  .navbar {
+    margin-bottom: 20px;
+  }
+.font1{
+  color :yellow;
+  size :  6px ;
+  position: absolute;
+  top:18%; 
+  left:40%;
+  font-weight:bold;
+  
+}
+.font2{color :yellow;
+   size :5px; 
+   position: absolute; 
+   left:7%;
+   font-weight:bold;
+
+}

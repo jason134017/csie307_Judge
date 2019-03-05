@@ -1,0 +1,37 @@
+<!--
+
+-->
+
+<html><head>
+<title>登入頁</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+<style type="text/css">
+body{
+ background-color:#ffffff
+}
+</style>
+<head>
+<body>
+<div style="text-align: center;">
+<form action="" name="form1" method="post" target="_top">
+<h2>登入</h2><p>
+帳號:<Input Type="text" name="account"><p>
+密碼:<Input Type="password" name="userpasswd"><p>
+
+<input value="登入帳號" type="submit" name="ok"  onclick="form1.action='Login.php';form1.submit();"/>
+<input value="註冊" type="submit"  onclick="form1.action='Register.html';"/>
+<input value="忘記密碼" type="submit" onclick="form1.action='Forget.html';"/>
+</form>
+<!--<a href="/dashboard/index2.html" target="_blank" style="text-decoration:none;color:red;">Week2HW_Form</a>-->
+
+
+<!--測試區
+<a href="index_login.php" name="otherlogin" id="otherlogin"  type="submit">otherlogin</a>
+勿動
+<a href="login/logout.php" name="Logout" id="Logout"  type="submit">Logout</a>-->
+</div>
+</body>
+
+</head>
+

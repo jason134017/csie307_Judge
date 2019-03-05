@@ -1,0 +1,113 @@
+
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Checkout example for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+
+  <body class="bg-light">
+      <nav class="navbar navbar-expand navbar-dark bg-dark">
+          <a class="navbar-brand" href="./Homepage.html">NUU CSIE Judge</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+    
+          <div class="collapse navbar-collapse" id="navbarsExample02">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="./Homepage.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#">Link</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      <div class="py-5 text-center">
+          <h2>忘記密碼</h2>
+      </div>
+    <div class="container ">
+        <div class="col-md-12 order-md-1">
+          <form class="needs-validation" id="form1"  name="form1" action="Forget.php" method="post" novalidate>
+            
+              <div class="mb-3">
+                <label for="account">帳號</label>
+                <input type="text" class="form-control" id="account" name="account" placeholder="" value="" required disabled>
+                <div class="invalid-feedback">
+                    請輸入帳號.
+                </div>
+              </div>
+              <div class="mb-3">
+                  <label for="email">Email </label>
+                  <input type="email" class="form-control" id="email" name="email" placeholder="" disabled>
+                  <div class="invalid-feedback">
+                      請輸入電子信箱.
+                  </div>
+              </div>
+              <div class="mb-3">
+                <label for="userpasswd">新密碼</label>
+                <input type="password" class="form-control" id="userpasswd" name="userpasswd" placeholder="" value="" required disabled> 
+                <div class="invalid-feedback">
+                    請輸入新密碼.
+                </div>
+              </div>
+              <div class="mb-3">
+                  <label for="checkpasswd">確認密碼</label>
+                  <input type="password" class="form-control" id="checkpasswd" name="checkpasswd" placeholder="" value="" required disabled>
+                  <div class="invalid-feedback">
+                      請輸入確認密碼.
+                  </div>
+              </div>
+            
+            <hr class="mb-4">
+            <button class="btn btn-primary btn-lg btn-block" type="submit" disabled>確認送出</button>
+          </form>
+      <h5 style="color:red">此功能正在維修中，請洽管理員nuucsie307@gmaill.com 或 csie307@googlegroups.com</h5>
+      <footer class="my-5 pt-5 text-muted text-center text-small">
+      </footer>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="lib/jquery/jquery-3.3.1.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+    <script>window.jQuery || document.write('<script src="./lib/jquery/jquery-3.3.1.min.js"><\/script>')</script>
+    <script src="./lib/popper/popper.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="../../assets/js/vendor/holder.min.js"></script>-->
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (function() {
+        'use strict';
+
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+    </script>
+  </body>
+</html>
