@@ -1,0 +1,30 @@
+html {
+    height: 100%;
+}
+body {
+    background-color: green;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+table, th, td {
+    border: 4px solid black;
+    border-collapse: collapse;
+}
+table {
+    border-spacing: 10px;
+}
+a:link, a:visited {
+    background-color: LightSkyBlue;
+    color: black;
+    padding: 2px 3px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+	font-size:16px;
+}
+a:hover, a:active {
+    background-color: Tomato;
+}
